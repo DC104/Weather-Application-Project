@@ -13,7 +13,7 @@
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
             <button>
-                <img src="weather-app-img/images/search.png" alt="Search">
+                <img src="search.png" alt="Search">
             </button>
 
         </div>
@@ -26,7 +26,7 @@
             <h2 class="city">Kolkata</h2>
             <div class="details">
                 <div class="col">
-                    <img src="weather-app-img/images/humidity.png" alt="humidity-image">
+                    <img src="humidity.png" alt="humidity-image">
                     <div>
                         <p class="humidity">68%</p>
                         <p>
@@ -36,7 +36,7 @@
                     </div>
                     </div>
                         <div class="col">
-                            <img src="weather-app-img/images/wind.png" alt="wind-image">
+                            <img src="wind.png" alt="wind-image">
                             <div>
                                 <p class="Wind">21 km/h</p>
                                 <p>
@@ -73,24 +73,24 @@ document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
 document.querySelector(".Wind").innerHTML = data.wind.speed +  " km/h";
 
 if(data.weather[0].main == "Clouds"){
-   weathericon.src = "weather-app-img/images/clouds.png";
+   weathericon.src = "clouds.png";
 
 }
 else if(data.weather[0].main == "Clear"){
-    weathericon.src = "weather-app-img/images/clear.png";
+    weathericon.src = "clear.png";
 
 }
 else if(data.weather[0].main == "Rain"){
-    weathericon.src = "weather-app-img/images/rain.png";
+    weathericon.src = "rain.png";
 
 
 }
 else if(data.weather[0].main == "Drizzle"){
-    weathericon.src = "weather-app-img/images/drizzle.png";
+    weathericon.src = "drizzle.png";
 
 }
 else if(data.weather[0].main == "Mist"){
-    weathericon.src = "weather-app-img/images/mist.png";
+    weathericon.src = "mist.png";
 
 }
 
